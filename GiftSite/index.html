@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Wrapped</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">Wrapped</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+
+      <!-- Button for booking a trip -->
+      <div class="nav__btns">
+        <a href="#booking"> <button class="btn">Schedule Pick Up</button></a>
+      </div>
+    </nav>
+
+    <!-- Header section of the page -->
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>A SIMPLE WAY TO HOLIDAY</p>
+          <h1>Get Started With Your Gift Giving Today</h1>
+          <!-- Button to book a trip -->
+          <div class="header__btns">
+            <a href="#booking"><button class="btn">Schedule Pick Up</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About section showcasing popular destinations -->
+    <section class="section__container destination__container">
+      <h2 class="section__header">Popular Styles</h2>
+      <!-- Grid displaying various destination cards -->
+      <div class="destination__grid">
+        <!-- Destination card 1 -->
+        <div class="destination__card">
+          <img src="assets/gift1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Gift 1</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Destination card 2 -->
+        <div class="destination__card">
+          <img src="assets/gift1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Gift 2</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Destination card 3 -->
+        <div class="destination__card">
+          <img src="assets/gift1.jpg" alt="destination" />
+          <div class="destination__card__details">
+            <div>
+              <h4>Gift 3</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package showcase section -->
+    <section class="section__container showcase__container" id="about">
+      <div class="showcase__image">
+        <img src="assets/showcase.jpg" alt="showcase" />
+      </div>
+      <div class="showcase__content">
+        <h4>About Me</h4>
+        <p>
+          Hi, I'm Cate Loughlean, a mother of three, deluxe store manager, and
+          professional gift wrapper with over 30 years of experience. As a
+          proud, long-standing member of the London community and the owner of
+          Wrapped, I’m here to make your holiday gift-wrapping stress-free and
+          enjoyable.
+        </p>
+        <p>
+          Curious how it works? If you live in London and need help wrapping
+          your gifts, simply fill out the form. I’ll personally come to pick up
+          your gifts at a designated time slot. Once they’re beautifully
+          wrapped, I’ll return them to you, and you can pay for the service upon
+          delivery—cash accepted!
+        </p>
+        <p>
+          Let me take the hassle out of your holiday preparations. Fill out the
+          form today to schedule a pickup and get an estimated completion date.
+          Let’s make your holiday season a little brighter, one wrapped gift at
+          a time!
+        </p>
+        <!-- Button to schedule a pick-up -->
+        <div class="showcase__btn">
+          <a href="#booking">
+            <button class="btn">
+              Schedule Pick Up
+              <span><i class="ri-arrow-right-line"></i></span>
+            </button>
+          </a>
+        </div>
+    </section>
+
+    <section class="section__container booking__container" id="booking">
+    
+      <form id="contact-form">
+      <!-- Name Field -->
+      <div class="form__group">
+        <span><i class="ri-user-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="text" name="name" required />
+
+            <label>Name</label>
+          </div>
+          <p>Enter your full name</p>
+        </div>
+      </div>
+      
+      <div class="form__group">
+        <span><i class="ri-mail-line"></i></span>
+        <div class="input__content">
+          <div class="input__group">
+            <input type="email" name="email" required />
+            <label>Email</label>
+          </div>
+          <p>Enter your email to receive a response</p>
+        </div>
+      </div>
+
+      
+        <div class="form__group">
+          <span><i class="ri-map-pin-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" name="address" required />
+              <label>Address</label>
+            </div>
+            <p>Enter your address for pick-up</p>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <span><i class="ri-ruler-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" name="size" required />
+              <label>Size</label>
+            </div>
+            <p>What size is your item?</p>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <span><i class="ri-palette-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <input type="text" name="color" required />
+              <label>Color Preference</label>
+            </div>
+            <p>What color would you like for your wrap?</p>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <span><i class="ri-message-line"></i></span>
+          <div class="input__content">
+            <div class="input__group">
+              <textarea name="additionalRequests"></textarea>
+              <label>Additional Requests</label>
+            </div>
+            <p>Anything else you would like to mention?</p>
+          </div>
+        </div>
+
+        <button class="btn" type="submit">
+          <i class="ri-search-line"></i> Schedule Pick-Up
+        </button>
+      </form>
+    </section>
+
+    <!-- Banner section displaying statistics -->
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>30+</h4>
+        <p>Years Experience</p>
+      </div>
+      <div class="banner__card">
+        <h4>100s</h4>
+        <p>Gifts Wrapped</p>
+      </div>
+      <div class="banner__card">
+        <h4>Local</h4>
+        <p>Londoner 15+ Years</p>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
